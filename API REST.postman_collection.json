@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "5f3f3d40-448d-47fd-bdbb-d8d99238b597",
+		"name": "API REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30818433"
+	},
+	"item": [
+		{
+			"name": "Where",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/?id=2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost/api/"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Elena\",\r\n    \"ap\": \"Suarez\",\r\n    \"am\": \"Quiroz\",\r\n    \"fn\": \"1990-05-28\",\r\n    \"genero\": \"F\"\r\n}"
+				},
+				"url": "localhost/api/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"nombre\": \"Pedro\",\r\n    \"ap\": \"Pelaez\",\r\n    \"am\": \"Gutierrez\",\r\n    \"fn\": \"2000-08-02\",\r\n    \"genero\": \"M\"\r\n}"
+				},
+				"url": "localhost/api/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/?id=4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
